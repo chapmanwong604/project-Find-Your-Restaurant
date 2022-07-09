@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>估你食咩野!Find Your Restaurant!</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <div id="container">
+        <div id="loading">
+            <img src="loading.gif" alt="Loading">
+            Loading...幫緊你..幫緊你...
+        </div>
+    
+        <div id="main">
+            <div id="main-container">
+                <h1 class="title">
+                    <span class="col-12 my-0 nav-cn">估你食咩野!</span>
+                    <span class="col-12 my-0 nav-en">Find Your Restaurant!</span>
+                </h1>
+                <h1 id="foodResult">
+                    <span>你上傳的食物是</span><br>
+                    <div id="foodChineseName"></div>
+                </h1>
+            
+                <h1 id="resTagDisplay">
+                    附近有關
+                    <span id="foodLabel"></span>
+                    的餐廳
+                </h1>
+            
+                <div id="restaurantResultContainer">
+            
+                    <!-- <div class="RestaurantsInfoDiv">
+            
+                        <div class="doorPhoto"><img src="${doorImage}">
+                        </div>
+                        
+                        <div class="information">
+                        
+                        <div class="restaurantname">餐廳名稱：${RestaurantInfoJSONSingle.name}</div>
+                        
+                        <div class="address">地址：${RestaurantInfoJSONSingle.address}</div>
+                        
+                        <div class="phoneNumber">電話：${RestaurantInfoJSONSingle.phone.substring(2,10)}</div>
+                        
+                        </div>
+                        
+                        <div class="buttontoclick">
+                        
+                        <div class="openRiceLink">
+                            <button onclick="window.location.href='${RestaurantInfoJSONSingle.openrice_link}'">
+                                <img id="OpenRiceIcon" src="openrice.png"></img>
+                            </button>
+                        </div>
+                        
+                        <div class="GoogleMapSearch">
+                            <button onclick="window.location.href='https://www.google.com.hk/maps/search/${RestaurantInfoJSONSingle.address}'">
+                                <img id="GoogleMapIcon" src="Google_Maps_logo_icon.png"></img>
+                            </button>
+                        </div>
+                        </div>
+                        
+                    </div> -->
+                </div>
+            </div>
+            <div class="home">
+                <a href="./homepage.html">
+                    <div class="home-button"><i class="bi bi-house-fill"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="results.js"></script>
+</html>
+

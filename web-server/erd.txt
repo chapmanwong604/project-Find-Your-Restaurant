@@ -1,0 +1,37 @@
+# Visualize on https://erd.surge.sh
+# or https://quick-erd.surge.sh
+#
+# Relationship Types
+#  -    - one to one
+#  -<   - one to many
+#  >-   - many to one
+#  >-<  - many to many
+#  -0   - one to zero or one
+#  0-   - zero or one to one
+#  0-0  - zero or one to zero or one
+#  -0<  - one to zero or many
+#  >0-  - zero or many to one
+#
+////////////////////////////////////
+
+
+food
+----
+id integer PK
+name varchar(255)
+chinese_name varchar(255)
+categories varchar(255)
+tags varchar(255)
+
+
+restaurants
+-----------
+latitude float
+longitude float
+id integer PK
+phone varchar(255)
+address varchar(255)
+openrice_link text unique
+door_photo text NULL
+name varchar(255)
+categories text

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>估你食咩野!Find Your Restaurant!</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div class="homepage-container">
+        <h1 class="col-12 m-0 row">
+            <span class="col-12 my-0 h1-cn">估你食咩野!</span>
+            <span class="col-12 my-0 h1-en">Find Your Restaurant!</span>
+        </h1>
+        <div class="outer-container row">
+            <h2 class="col-12 my-3 row">
+                <span class="col-md-6 h2-title col-12">上傳你的食物照片，</span>
+                <span class="col-md-6 h2-title col-12">我們為你推介更多餐廳！</span>
+            </h2>
+            <!-- <div class="upload-container col-12 p-0"> -->
+            <form id="UploadImageForm" class="upload-container row col-12 p-0" action="/postImageToAI" method="post">
+                <div id="ForUploadImage" class="col-md-5 col-12 row">
+                    <label class="row" id="upload-label">
+                        <span class="col-12 upload-title">上傳食物圖片</span>
+                        <input class="col-12" id="upload-image" name="image" type='file' accept='image/*'
+                            onchange='openFile(event)'>
+                            <img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif" class="col-8" id='output'>
+                            <i class="bi bi-image"></i>
+                    </label>
+                </div>
+
+                <div id="ForUsingCamera" class="col-md-5 col-12 row">
+                    <label class="row" id="start-label">
+                        <span class="col-12 camera-title">或使用你的相機拍照</span>
+                        <input class="col-12" id="start-camera" type="button" value="開啟相機"></input>
+                        <video class="col-8" id="video" width="320" height="240" autoplay></video>
+                        <i class="bi bi-camera-video-fill"></i>
+                    </label>
+                    <label class="row" id="click-label">
+                        <input class="col-12" id="click-photo" type="button" value="拍照"></input>
+                        <canvas class="col-8" id="canvas" width="320" height="240"></canvas>
+                        <i class="bi bi-camera-fill"></i>
+                    </label>
+                </div>
+
+                <input id="submitButton" type="submit" value="上傳圖片">
+
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="scripts.js"></script>
+
+</html>
