@@ -1,13 +1,10 @@
 # **Find-Your-Restaurant (AI Image Project)**
 
 ## **Overview:**
----
 
 This is an **AI image-related beginner project** which can recognize **73 types of food** in different cuisines.
 
 Please upload a food image to find the nearest type among those 73 kinds of food, then a list of restaurants with related cuisines will be generated.
-
-<br>
 
 **Contributors:**
 
@@ -15,10 +12,7 @@ Please upload a food image to find the nearest type among those 73 kinds of food
 -   Hang Tsui
 -   Chapman Wong
 
-<br>
-
 ## **Setup for the Project:**
----
 
 1. Install the dependencies of requirements.txt inside a **Python** virtual environment.
     
