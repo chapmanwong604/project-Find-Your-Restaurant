@@ -6,12 +6,6 @@ This is an **AI image-related beginner project** which can recognize **73 types 
 
 Please upload a food image to find the nearest type among those 73 kinds of food, then a list of restaurants with related cuisines will be generated.
 
-**Contributors:**
-
--   William Chi
--   Hang Tsui
--   Chapman Wong
-
 ## **Setup for the Project:**
 
 1. Install the dependencies of requirements.txt inside a **Python** virtual environment.
@@ -46,3 +40,9 @@ Please upload a food image to find the nearest type among those 73 kinds of food
         npx ts-node main.ts
     
 8. Go to http://localhost:8000/ and try it out!
+
+## **Contributors:**
+
+-   William Chi
+-   Hang Tsui
+-   Chapman Wong
