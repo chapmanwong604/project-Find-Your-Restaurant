@@ -33,34 +33,33 @@ var openFile = function (event) {
 };
 
 //USING CAMERA
-camera_button.addEventListener('click', async function () {
-    let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-    video.srcObject = stream;
-    click_label.style.display = 'flex';
-    // click_button.style.display = 'block';
+// camera_button.addEventListener('click', async function () {
+//     let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+//     video.srcObject = stream;
+//     click_label.style.display = 'flex';
+//     // click_button.style.display = 'block';
 
-    // CSS PART
-    start_label.style.opacity = 1;
-    start_label.style.border = "solid var(--yellow)";
-});
+//     // CSS PART
+//     start_label.style.opacity = 1;
+//     start_label.style.border = "solid var(--yellow)";
+// });
 
 //TAKE PHOTOS
+// click_button.addEventListener('click', function () {
+//     canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
 
-click_button.addEventListener('click', function () {
-    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+//     let blob = document.querySelector("#canvas").toBlob(function (blob) {
+//         file = new File([blob], "test.jpg", { type: "image/jpeg" });
+//     }, "image/jpeg");
 
-    let blob = document.querySelector("#canvas").toBlob(function (blob) {
-        file = new File([blob], "test.jpg", { type: "image/jpeg" });
-    }, "image/jpeg");
+//     file = new File([blob], `uploaded${new Date()}.jpg`);
 
-    file = new File([blob], `uploaded${new Date()}.jpg`);
+//     console.log(file)
 
-    console.log(file)
-
-    // CSS PART
-    click_label.style.opacity = 1;
-    click_label.style.border = "solid var(--yellow)";
-});
+//     // CSS PART
+//     click_label.style.opacity = 1;
+//     click_label.style.border = "solid var(--yellow)";
+// });
 
 
 //FETCH POST AFTER CLICKING SUBMIT BUTTON, REDIRECT TO NEXT PAGE AND LOAD GET RESTAURANT FUNC.

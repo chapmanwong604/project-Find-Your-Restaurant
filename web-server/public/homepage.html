@@ -26,7 +26,7 @@
             </h2>
             <!-- <div class="upload-container col-12 p-0"> -->
             <form id="UploadImageForm" class="upload-container row col-12 p-0" action="/postImageToAI" method="post">
-                <div id="ForUploadImage" class="col-md-5 col-12 row">
+                <div id="ForUploadImage" class="col-sm-5 col-12 row">
                     <label class="row" id="upload-label">
                         <span class="col-12 upload-title">上傳食物圖片</span>
                         <input class="col-12" id="upload-image" name="image" type='file' accept='image/*'
@@ -36,7 +36,7 @@
                     </label>
                 </div>
 
-                <div id="ForUsingCamera" class="col-md-5 col-12 row">
+                <!-- <div id="ForUsingCamera" class="col-md-5 col-12 row">
                     <label class="row" id="start-label">
                         <span class="col-12 camera-title">或使用你的相機拍照</span>
                         <input class="col-12" id="start-camera" type="button" value="開啟相機"></input>
@@ -48,9 +48,10 @@
                         <canvas class="col-8" id="canvas" width="320" height="240"></canvas>
                         <i class="bi bi-camera-fill"></i>
                     </label>
+                </div> -->
+                <div id="submitContainer" class="col-12">
+                    <input id="submitButton" type="submit" value="上傳圖片">
                 </div>
-
-                <input id="submitButton" type="submit" value="上傳圖片">
 
             </form>
             <!-- </div> -->
