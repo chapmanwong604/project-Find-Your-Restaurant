@@ -9,7 +9,7 @@
     "start": "ts-node main.ts",
     "dev": "ts-node-dev main.ts",
     "test": "jest --runInBand --forceExit",
-    "build": "tsc -p"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
