@@ -4,7 +4,9 @@
 
 This is an **AI image-related beginner project** which can recognize **73 types of food** in different cuisines.
 
-Simply upload a food image to find the most similar one among 73 kinds of food, then a list of nearby restaurants with related cuisines will be generated. 
+Simply upload a food image to find the most similar one among 73 kinds of food, then a list of nearby restaurants with related cuisines will be generated.
+
+**All restaurants' data are from [OpenRice](www.openrice.com).**
 
 (Currently, only restaurants in Tsuen Wan District can be generated)
 
